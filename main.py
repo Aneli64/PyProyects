@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from Coffe_Machine_Proyect.coffeMachine import CoffeMachine
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    # TODO: CREATE A COFFEE MACHINE
+    coffeMachine = CoffeMachine(100, 50, 76, 2.5)
+
+    # TODO: PRINT A REPORT
+    print(coffeMachine.coffe_info())
+    coffeMachine.choose_coffe_type()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
